@@ -19,7 +19,13 @@ body, html {
     background-color: #4CAF50;
     padding: 20px;
     text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    height: 100px;
 }
 
 .header__title {
@@ -52,6 +58,10 @@ body, html {
 
 .nav__link:hover {
     background-color: #45a049;
+}
+
+.main {
+    padding-top: 100px; /* Отступ больше высоты шапки для предотвращения наложения */
 }
 
 /* 12-колоночная сетка для товаров */
@@ -153,6 +163,17 @@ body, html {
     background-color: #45a049;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    margin-top: 80px;
+}
+
+.grid-item {
+    grid-column: span 4;
+}
 
 /* Подвал */
 .footer {
