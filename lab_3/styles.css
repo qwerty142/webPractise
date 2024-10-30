@@ -61,7 +61,7 @@ body, html {
 }
 
 .main {
-    padding-top: 100px; /* Отступ больше высоты шапки для предотвращения наложения */
+    padding-top: 100px;
 }
 
 /* 12-колоночная сетка для товаров */
@@ -73,7 +73,7 @@ body, html {
     margin-top: 80px;
 }
 .grid-item {
-    grid-column: span 4; /* Каждая карточка занимает 4 колонки */
+    grid-column: span 4;
 }
 /* Каталог */
 .catalog {
@@ -126,6 +126,10 @@ body, html {
     background-color: #f9f9f9;
 }
 
+.pricing-grid__item:nth-child(even) {
+    background-color: #fff;
+}
+
 .product-card__title {
     font-size: 1.5rem;
     margin: 15px 0;
@@ -172,7 +176,7 @@ body, html {
 }
 
 .grid-item {
-    grid-column: span 4;
+    grid-column: span 3;
 }
 
 /* Подвал */
