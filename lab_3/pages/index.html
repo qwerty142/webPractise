@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Магазин компьютерных комплектующих. Лучшие товары по доступным ценам.">
+    <meta name="keywords" content="компьютеры, комплектующие, магазин, купить, видеокарты, процессоры, оперативная память">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Магазин компьютерных комплектующих</title>
+</head>
+<body class="page">
+
+<header class="header">
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="catalog.html">Каталог</a></li>
+            <li class="nav__item"><a class="nav__link" href="cart.html">Корзина</a></li>
+            <li class="nav__item"><a class="nav__link" href="account.html">Мой аккаунт</a></li>
+            <li class="nav__item"><a class="nav__link" href="register.html">Регистрация</a></li>
+            <li class="nav__item"><a class="nav__link" href="about.html">О компании</a></li>
+        </ul>
+    </nav>
+    <h1 class="header__title">Добро пожаловать в Компшоп!</h1>
+</header>
+
+<main class="main">
+    <section class="catalog" id="catalog">
+        <h2 class="catalog__title">Наши товары</h2>
+
+        <div class="product-card">
+            <img class="product-card__image" src="images/rtx_3080.jpg" alt="Видеокарта NVIDIA GeForce RTX 3080">
+            <h3 class="product-card__title">Видеокарта NVIDIA GeForce RTX 3080</h3>
+            <p class="product-card__price"><strong>Цена:</strong> 700 000 руб.</p>
+            <button class="product-card__button" onclick="addToCart('Видеокарта NVIDIA GeForce RTX 3080')">Добавить в корзину</button>
+        </div>
+
+        <div class="product-card">
+            <img class="product-card__image" src="images/intel.jpg" alt="Процессор Intel Core i9-12900K">
+            <h3 class="product-card__title">Процессор Intel Core i9-12900K</h3>
+            <p class="product-card__price"><strong>Цена:</strong> 29 000 руб.</p>
+            <button class="product-card__button" onclick="addToCart('Процессор Intel Core i9-12900K')">Добавить в корзину</button>
+        </div>
+
+        <div class="product-card">
+            <img class="product-card__image" src="images/corsair.jpg" alt="Оперативная память Corsair 32GB DDR4">
+            <h3 class="product-card__title">Оперативная память Corsair 32GB DDR4</h3>
+            <p class="product-card__price"><strong>Цена:</strong> 10 000 руб.</p>
+            <button class="product-card__button" onclick="addToCart('Оперативная память Corsair 32GB DDR4')">Добавить в корзину</button>
+        </div>
+    </section>
+    <!-- Таблица с использованием grid для адаптивности -->
+    <section class="pricing-table">
+        <h2 class="pricing-table__title">Сравнение цен</h2>
+        <div class="pricing-grid">
+            <div class="pricing-grid__header">Товар</div>
+            <div class="pricing-grid__header">Цена</div>
+            <div class="pricing-grid__header">Доступность</div>
+
+            <div class="pricing-grid__item">NVIDIA GeForce RTX 3080</div>
+            <div class="pricing-grid__item">70 000 руб.</div>
+            <div class="pricing-grid__item">В наличии</div>
+
+            <div class="pricing-grid__item">Intel Core i9-12900K</div>
+            <div class="pricing-grid__item">50 000 руб.</div>
+            <div class="pricing-grid__item">В наличии</div>
+
+            <div class="pricing-grid__item">Corsair 32GB DDR4</div>
+            <div class="pricing-grid__item">15 000 руб.</div>
+            <div class="pricing-grid__item">Ограничено</div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <p class="footer__text">&copy; Компшоп</p>
+    <div class="footer__banner">Здесь может быть ваша реклама!</div>
+</footer>
+</body>
+</html>
+
+
+
