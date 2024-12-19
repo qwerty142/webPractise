@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конструктор таблиц</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="js_scripts/constructor.js" defer></script>
+</head>
+<body class="page">
+<header class="header">
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
+            <li class="nav__item"><a class="nav__link" href="catalog.html">Каталог</a></li>
+            <li class="nav__item"><a class="nav__link" href="constructor.html">Конструктор</a></li>
+            <li class="nav__item"><a class="nav__link" href="about.html">О компании</a></li>
+        </ul>
+    </nav>
+    <h1 class="header__title">Конструктор таблиц</h1>
+</header>
+
+<main class="main">
+    <h2>Создайте свою таблицу</h2>
+    <form id="tableForm" class="form">
+        <label>
+            Количество дней в неделе:
+            <select id="days" name="days">
+                <option value="5">5 дней</option>
+                <option value="6">6 дней</option>
+            </select>
+        </label>
+        <label>
+            Количество уроков в день:
+            <input type="number" id="lessons" name="lessons" min="1" max="10" value="5">
+        </label>
+        <label>
+            Язык таблицы:
+            <select id="language" name="language">
+                <option value="ru">Русский</option>
+                <option value="en">English</option>
+            </select>
+        </label>
+        <button type="submit">Создать таблицу</button>
+        <button type="button" id="loadParams">Загрузить параметры</button>
+    </form>
+    <div id="tableContainer"></div>
+</main>
+
+<footer class="footer">
+    <p>&copy; 2024 Конструктор таблиц</p>
+</footer>
+</body>
+</html>
